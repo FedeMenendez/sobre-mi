@@ -1,0 +1,23 @@
+body {
+    background-color: white;
+}
+.Datos{
+    color: black;
+    font-family: monospace;
+    font-size: large;
+}
+.intereses{
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+}
+.Experiencia{
+    background-color: black;
+    color: beige;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+.boton{
+    background-color: red; /*En esta line se define el color de fondo del boton*/
+    color: blanchedalmond; /*En esta linea se define el color de la letra del boton*/
+    padding: 5px 25px; /*En esta linea se define el tamaño del boton que rediccionará a otra pagina web*/
+}
