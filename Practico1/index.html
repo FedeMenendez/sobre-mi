@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+
+<body class="main">
+    <h1> Calculadora Super</h1>
+    <h3>La calculadora permite realizar sumas, restas, multiplicaciones y divisiones, ingrese los valores 
+    en los campos donde dice "ingrese un numero" y seleccione la operación que desea realizar desde el
+    menu desplegable y con el boton "calcular" se realiza la operación. El boton "Limpiar campos" borra 
+    los valores y asigna la operación suma. Puede cambiar el fondo con el boton "Cambiar fondo" seleccionando 
+    entre los fondos disponibles en el menu desplegable</h3><br>
+    <!-- <label for="numero1">Ingrese un numero: </label> -->
+    <input class="numero1" type="text" id="numero1" placeholder="Ingrese un numero">
+    
+    <!-- <label for="operador">Elija una operacion: </label> -->
+    <select class="operador" name="operacion" id="operador">
+        <option value="suma">+</option>
+        <option value="resta">-</option>
+        <option value="multiplicacion">*</option>
+        <option value="division">/</option>
+        <!-- <option value="raiz">√</option> -->
+    </select>
+    
+    <!-- <label for="numero2">Ingrese un numero: </label> -->
+    <input class="numero2" type="text" id="numero2" placeholder="Ingrese un numero">
+    <button class="boton1" onclick="calcular()">Calcular</button>
+    <input class="resultado" id="resultado" placeholder="resultado"></input>
+    <br><br><br>
+    <button class="limpia" onclick="limpiar()">Limpiar campos</button>
+    <br><br><br>
+    <select class="color" name="color" id="color">
+        <option value="rojo">Rojo</option>
+        <option value="azul">Azul</option>
+        <option value="verde">Verde</option>
+        <option value="amarillo">Amarillo</option>
+        <option value="blanco">Blanco</option>
+        <option value="gris">Gris</option>
+    </select>
+    <button class="cambio" id="cambiar">Cambiar fondo</button>
+</body>  
+
+<script src="calculadora.js"></script>
+
+</html>

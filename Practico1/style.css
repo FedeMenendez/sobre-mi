@@ -1,0 +1,43 @@
+.main {
+    color: black;
+    font-size: large;
+    background-color: white;
+
+}
+.boton1{
+    background-color: gainsboro;
+    width: 4cm;
+    height: 1cm;
+}
+.numero1{
+    width: 6cm;
+    height: 0.6cm; 
+    font-size: x-large; 
+}
+.operador{
+    width: 1cm;
+    height: 1cm;
+    font-size: x-large;
+    background-color: gainsboro;
+}
+.numero2{
+    width: 6cm;
+    height: 0.6cm; 
+    font-size: x-large; 
+}
+.resultado{
+    width: 6cm;
+    height: 0.6cm; 
+    font-size: x-large;
+}
+.cambio,.limpia{
+    background-color: gainsboro;
+    width: 4cm;
+    height: 1cm;
+}
+.color{
+    width: 4cm;
+    height: 1cm;
+    font-size: large;
+    background-color: white;
+}
