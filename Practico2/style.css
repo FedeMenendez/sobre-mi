@@ -1,0 +1,109 @@
+.btn:focus{
+    background-color:dimgray;
+    
+}
+.btn:hover{
+    transform: scale(110%);
+}
+
+img{
+    max-width: 50%;
+    max-height:50%;
+    position: static;
+    border-radius: 5%;
+}
+
+.btn{
+    padding: 25px;
+    display:flexbox;
+    background-color: rgb(175, 28, 28);
+    border-radius: 60%;
+}
+
+.titulo{
+    grid-area: item1;
+    background-color: aquamarine;
+}
+
+.nombre{
+    grid-area: item2;
+    background-color: aquamarine;
+    font-size: x-large;
+}
+
+.butons{
+    grid-area: item3;
+    background-color: aquamarine;
+}
+
+.usuario{
+    grid-area: item4;
+    background-color: aquamarine;
+    font-size: x-large;
+}
+
+.compu{
+    grid-area: item5;
+    background-color: aquamarine;
+    font-size: x-large;
+}
+
+.boton{
+    grid-area: item6;
+    background-color: aquamarine;
+}
+
+.res{
+    grid-area: item7;
+    background-color: aquamarine;
+    font-size: x-large;
+    border: 0px;
+}
+
+.puntoscompu{
+    grid-area: item8;
+    background-color: aquamarine;
+    font-size: x-large;
+}
+
+.puntosjugador{
+    grid-area: item9;
+    background-color: aquamarine;
+    font-size: x-large;
+
+}
+
+#resultadoFinal{
+    grid-area: item10;
+    background-color: aquamarine;
+    font-size: x-large;  
+}
+
+body{
+    display: grid;
+    justify-items: center;
+    align-self: center;
+    background-color: rgb(228, 202, 162);
+    grid-template-areas: "item1 item1 item1 item2 item2 item2"
+                         "item3 item3 item3 item3 item3 item3"
+                         "item4 item4 item6 item6 item5 item5"
+                          "  -    -     - - - - "
+                         "item9 item9 item7 item7 item8 item8"
+                         "item10 item10 item10 item11 item11 item11";
+    
+    gap: 10px;
+    
+}
+
+.boton1{
+    width: 200px;
+    height: 75px;
+    font-size: x-large;
+}
+
+#reset{
+    grid-area: item11;
+    width: 200px;
+    height: 75px;
+    font-size: x-large;
+}

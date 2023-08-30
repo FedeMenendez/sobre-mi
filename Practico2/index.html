@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra,papel,tijera</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="titulo">
+        <h1>Bienvenido a Piedra-Papel-Tijera: </h1>
+    </div>
+ 
+    <div class="nombre">
+        <h1 id="nombre"></h1>
+    </div>
+    
+    <br>
+    
+    <div class="butons">
+        <button class="btn" onclick="obtenerJugada('piedra')"><img src="assets/piedra.PNG" alt="Piedra"></button>
+        <button class="btn" onclick="obtenerJugada ('papel')"><img src="assets/papel.PNG" alt="Papel"></button>
+        <button class="btn" onclick="obtenerJugada('tijera')"><img src="assets/tijera.PNG" alt="Tijera"></button>
+    </div>
+    <br>
+ 
+    <p class="usuario" id="eleccionDelUsuario">Jugador eligió: </p>
+ 
+    <p class="compu" id="eleccionComputadora">Computadora eligio: </p>
+ 
+    <div class="boton">
+        <button class="boton1" onclick="jugar()">Jugar</button>
+    </div>
+
+    <input class="res" type="text" id="resultado">
+    <br>
+
+    <div class="puntosjugador">
+        <p id="puntosJugador">Puntos Jugador:</p>
+    </div>
+
+    <div class="puntoscompu">
+         <p id="puntosComputadora">Puntos Computadora:</p>
+    </div>
+    
+    <p id="resultadoFinal">El ganador de la partida es: </p>
+        
+    <button id="reset" onclick="reset ()">Reset</button>
+    
+</body>
+<script src="piedraPapelTijera.js"></script>
+</html>

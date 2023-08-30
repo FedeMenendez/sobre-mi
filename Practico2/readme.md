@@ -1,0 +1,23 @@
+# Piedra, Papel, Tijera
+Para jugar piedra, papel, tijeras debe ingresar el nombre del jugador, este puede contener números pero no puede ser solamente números, tampoco puede estar vacio. Si ocurre algo de esto le pedirá que vuelva a ingresar el nombre del jugador.
+Luego de esto podrá clickear en los globos de piedra, papel o tijera. Al pasar el cursor por alguno de ellos la imagen aumenta de tamaño y al elegir alguno el fondo de la imagen cambia a color gris y en la parte inferior se vera un texto con la elección que realizó.
+Clickeando sobre el boton jugar se realiza la jugada y se podrá ver la elección de la computadora y el ganador de la ronda. 
+En los renglones siguientes se tienen los puntos del jugador y de la computadora y al llegar a tres puntos alguno de los jugadores aparecera un texto con el ganador de la partida. El boton "Reset" permite reiniciar el juego, por lo que los puntos de cada jugador se hacen cero y se debe reingresar el nombre del jugador.
+
+# Reglas del juego
+Las reglas del juego son sencillas Piedra le gana a Tijera, Papel le gana a Piedra y Tijera le gana a Papel. El juego consiste en rondas, el ganador de cada ronda obtiene un punto, si ocurre un empate no hay puntos para ningun jugador. 
+El ganador de la partida es el primero en llegar a tres puntos.
+
+# Detalle de lo implementado
+Lo primero que se realizó fue declarar las variables necesarias para el funcionamiento del juego. Al abrir la pagina se inicia con el llamado a la función main que le solicita al usuario el nombre del jugador, si este es vacio o es un número le aparecerá un mensaje que dice que el nombre es invalido y se debe reingresar el nombre del jugador.
+Lo siguiente que tenemos es la selección de "piedra", "papel" o "tijera" implementada en el codigo .html mediante botones que realizan el llamado a la función obtenerJugada y pasa como parámetro la selección del jugador.Lo que realiza esta función es "limpiar" la selección de la computadora y el del resultado de la ronda anterior, le asigna a la variable jugadaUsuario la seleccion del jugador y con la sentecia if lo que se hace es borrar el resultado de la partida anterior cuando se inicia una nueva partida.
+Al hacer click sobre el boton Jugar del codigo .html se llama a la función jugar que lo que realiza es asignar a la variable jugadaComputadora el llamado a una función obtenerJugadaComputadora para obtener la jugada de la computadora mediante la función matemática random multiplicado por tres numeros entre cero y 2,99999 y mediante la funcion math.floor obtener los numeros 0; 1; 2. Con este numero se busca en la posición de un arreglo para que tiene las opciones de piedra, palpel o tijera. Obtenida la jugada de la computadora se vuelve a la función jugar en donde con las jugadas del jugador y la computadora ya determinadas con las sentencias if-else if que continuan se determina el ganador o si hay empate, se asignan los puntos si corresponden y se anuncia el resultado de la ronda y se cambia en valor de los puntos de cada jugador si corresponden en la pagina web.
+Cuando uno de los jugadores llega a tres puntos, que se verifica mediante un if, se anuncia el ganador de la partida, esto se realiza mediante una sentencia if-else y lo siguente es realizar el llamado a la función limpiar que restaura a los valores iniciales de los puntos de los jugadores, los del resultado de la ronda y partida dejando estos inicializados para iniciar una nueva partida con los mismos jugadores.
+Por último queda revisar el funcionamiento del boton de reset. Cuando se hace click en este lo que hace el programa es llamar a la función reset que llama a la función limpiar cuyo funcionamiento fue explicado con anterioridad, se llama a la funcion main para obtener el nombre del jugador, se resetea el contador de rondas y se borra al ganador de la partida. lo que hace es como un boton de salida de un programa clasico en donde deja todos los valores como si no se hubiesen utilizado.
+ 
+# Mejoras para hacer a lo realizado
+1. La validación del nombre solo contempla que no ingrese un número o un texto vacio, por lo que se puede ingresar un letras con números por ejemplo: juan512. También permite el uso de caracteres especiales como *, /, +, -, & por lo que podriamos poner como nombre ":)" y lo tomará como válido.
+2. En caso de que no se seleccione alguna de las opciones y se accione al boton jugar no aparecerá ningun mensaje de alerta que avise de esto
+
+## Autor ✒️
+* **Federico Menendez**  [Github](https://github.com/FedeMenendez)
